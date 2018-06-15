@@ -1,0 +1,21 @@
+package tests;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import TestBase.TestBaseSetup;
+
+
+public class facebookTest extends TestBaseSetup {
+private WebDriver driver;	
+
+@BeforeClass
+public void setUp() {
+	driver=getDriver();
+}
+
+@Test
+  public void f()
+  {
+  }
+}

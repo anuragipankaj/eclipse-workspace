@@ -1,0 +1,11 @@
+<suite name="parallelBrowser">
+<test name="firefoxDemo" thread-count="3" parallel="methods" >
+<classes>
+<class name="parallel.parallelBrowserTestNg" />
+<include value="thread1"/>
+<include value="thread2"/>
+
+</classes>
+</test>
+
+</suite>

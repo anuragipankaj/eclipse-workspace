@@ -1,0 +1,10 @@
+<suite  name="testng"> 
+<test name="demo">
+<classes>
+
+<class name="xmlDemo.testngXmlDemo"/>
+<class name="testng.NewTest1"/>
+
+</classes>
+</test>
+</suite>

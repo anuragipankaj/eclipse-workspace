@@ -1,0 +1,9 @@
+<suite name="Multi run" >
+<test name="Test Multi Run">
+<classes>
+
+<class name="parallel.multipleRunTest"/>
+
+</classes>
+</test>
+</suite>

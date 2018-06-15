@@ -1,0 +1,37 @@
+package tests;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import TestBase.TestBaseSetup;
+import facebookPages.mainPage;
+
+
+public class testFbMainPage extends TestBaseSetup {
+private WebDriver driver;	
+
+@BeforeClass
+public void setUp() 
+{
+	driver=getDriver();
+}
+
+@Test
+  public void verifyMainPage()
+  {
+	mainPage page= new mainPage(driver);
+	Assert.assertTrue(page.verifyTitle(), "Home page title doesn't match");
+	System.out.println("SUCCESS");
+  }
+@Test
+ public void verifyLogin()
+ {
+	System.out.println("Current page :"+driver.getCurrentUrl());
+	mainPage page= new mainPage(driver);
+	page.enterEmail("9968285308");
+ 
+ }
+
+
+}

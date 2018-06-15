@@ -1,0 +1,15 @@
+package facebookPages;
+
+public class afterLogin 
+{
+	protected WebDriver driver;
+	
+	void afterLogin(WebDriver d)
+	{
+		driver =d;
+	}
+	
+	
+	
+
+}

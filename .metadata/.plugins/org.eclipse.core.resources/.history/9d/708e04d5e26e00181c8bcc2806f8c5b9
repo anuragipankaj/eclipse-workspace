@@ -1,0 +1,40 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class basePage 
+{
+protected WebDriver driver;
+private By signInBtn=By.linkText("Sign in");
+
+public basePage(WebDriver d)
+	{
+	driver=d;
+	}
+
+
+public String getTittle()
+	{
+	String t= driver.getTitle();
+			return t;
+	}
+
+public boolean verifyPage()
+	{
+	return (getTittle().equals("Google"));	
+	}
+
+public SignInPage clickSigninBtn()
+	{
+		System.out.println("Clicking SignIn Button!!");
+		WebElement signInBtnEelement=driver.findElement(signInBtn);		
+		if(signInBtn. )
+		
+		driver.findElement(signInBtn).click();
+	}
+
+
+
+}

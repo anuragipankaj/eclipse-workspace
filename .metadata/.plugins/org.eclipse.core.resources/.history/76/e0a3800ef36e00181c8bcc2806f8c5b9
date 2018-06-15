@@ -1,0 +1,20 @@
+package tests;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import TestBase.TestBaseSetup;
+
+
+public class facebookTest extends TestBaseSetup {
+  
+@BeforeClass	
+void check()
+	{
+	
+	}
+
+@Test
+  public void f()
+  {
+  }
+}

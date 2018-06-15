@@ -1,0 +1,15 @@
+package facebookPages;
+
+import org.openqa.selenium.WebDriver;
+
+public class mainPage
+{
+	WebDriver driver;
+	void mainPage(WebDriver d)
+	{
+		driver =d;
+	}
+	
+	
+
+}

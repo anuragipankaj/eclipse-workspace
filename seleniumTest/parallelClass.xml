@@ -1,0 +1,9 @@
+<suite name="parallel class"  parallel="classes" thread-count="3">
+<test name="classes test">
+<classes>
+<class name="parallel.parallelClass1"  />
+<class name="parallel.parallelClass2"  />
+
+</classes>
+</test>
+</suite>

@@ -1,0 +1,10 @@
+package Annotation; 
+
+@RunWith(Cucumber.class) 
+@Cucumber.Options(format = {"pretty", "html:target/cucumber"}) 
+
+public class runTest 
+{
+	
+	
+}

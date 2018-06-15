@@ -1,0 +1,9 @@
+package facebookPages;
+
+public class afterLogin 
+{
+	protected WebDriver driver;
+	
+	
+
+}

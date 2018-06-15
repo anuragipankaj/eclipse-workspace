@@ -1,0 +1,32 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class basePage 
+{
+protected WebDriver driver;
+private By signButton=By.linkText("Sign in");
+
+public basePage(WebDriver d)
+	{
+	driver=d;
+	}
+
+
+public String getTittle()
+	{
+	String t= driver.getTitle()
+			return t;
+	}
+
+public boolean verifyPage()
+	{
+	
+	
+	}
+
+
+
+
+}

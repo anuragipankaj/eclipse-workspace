@@ -1,0 +1,7 @@
+<suite name="Main Test Suite" verbose="1">
+    <test name="TestNG Grid">
+        <classes>
+        <class name="grid.grid_setUp"/>
+        </classes>
+    </test>
+</suite>

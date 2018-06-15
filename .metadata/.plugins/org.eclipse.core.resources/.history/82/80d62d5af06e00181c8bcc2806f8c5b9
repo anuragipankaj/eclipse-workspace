@@ -1,0 +1,30 @@
+package facebookPages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class mainPage
+{
+	WebDriver driver;
+	private By loginBtn;
+	
+	void mainPage(WebDriver d)
+	{
+		driver =d;
+	}
+public String getTitle()
+	{
+	return driver.getTitle();
+	}
+public boolean verifyTitle()
+	{
+		String t=getTitle();
+		return t.equals("Facebook-log in or sign up");
+	}
+public void clickLoginBtn()
+	{
+		
+	}
+
+
+}

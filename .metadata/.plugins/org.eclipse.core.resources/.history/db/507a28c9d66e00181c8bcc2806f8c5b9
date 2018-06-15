@@ -1,0 +1,31 @@
+package TestBase;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestBaseSetup 
+{
+	
+public WebDriver driver;
+static String baseDriver="C:/Users/anuragi.pankaj/Downloads/installed softwares/selenium/";
+
+public WebDriver getDriver()
+	{
+	return driver;
+	}
+
+public void setDriver(String browser,String url)
+{
+	switch(browser)
+	{
+	case "chrome":	
+		System.setProperty("webdriver.chrome.driver",baseDriver+"chrome driver/chromedriver.exe");	
+		driver = new ChromeDriver();
+		driver.get(url);
+	}
+	
+}
+
+
+
+}

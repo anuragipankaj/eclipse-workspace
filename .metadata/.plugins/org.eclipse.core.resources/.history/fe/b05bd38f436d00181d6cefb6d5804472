@@ -1,0 +1,64 @@
+package testng;
+
+import java.sql.Driver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class yahooLoginTest 
+{
+	public WebDriver driver;
+	public String driverUrl="C:/Users/anuragi.pankaj/Downloads/installed softwares/selenium/gecko/geckodriver.exe";
+	public String webUrl="https://login.yahoo.com/";
+	
+
+	@BeforeTest
+	public void InsertValues()
+	{
+		System.setProperty("webdriver.gecko.driver", driverUrl);
+		driver =new FirefoxDriver();
+		driver.get(webUrl);
+			
+	}
+	
+	@Test(priority=0)
+	public void CheckTitle()
+	{
+		String actual="Yahoo - login";
+		String current=driver.getTitle();
+		System.out.println("Tittle output :"+current);
+		Assert.assertEquals(actual, current);
+		
+	}
+	
+	
+	@Test(priority=1)
+  public void LoginTest() throws InterruptedException 
+	{
+		driver.findElement(By.name("username")).sendKeys("staging107_purch@yahoo.com");
+		driver.findElement(By.name("username")).submit();
+		Thread.sleep(3000);
+		System.out.println("Current Url : "+driver.getCurrentUrl());
+		driver.findElement(By.name("password")).sendKeys("staging107_purch");
+		driver.findElement(By.name("password")).sendKeys(Keys.ENTER);
+		Thread.sleep(5000);
+		System.out.println("Current Url : "+driver.getCurrentUrl());
+		boolean login=driver.getCurrentUrl().contains("//in.");
+		System.out.println("Login SUCCESS");
+		Assert.assertEquals(login, true);
+		//driver.findElement(By.xpath("//input[@id='email']")).sendKeys("staging107_purch@yahoo.com");
+    }
+	
+	@AfterTest
+	public void CloseBrowser()
+	{
+		//driver.quit();
+	}
+	
+}

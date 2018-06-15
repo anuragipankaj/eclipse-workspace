@@ -1,0 +1,32 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class createAccountPage {
+	private WebDriver driver;
+	private By headerPageTxt = By.cssSelector(".signuponepage.main.content.clearfix>h1");
+	public createAccountPage(WebDriver driver) {
+		this.driver=driver;
+	}
+	
+	public String getTitle() {
+		String title = driver.getTitle();
+		return title;
+	}
+	
+	public boolean verifyPage() {
+		String pageTitle = "Create your Google Account";
+		return getTitle().contains(pageTitle);
+	}
+	public boolean verifyCreateAccountPageText() {
+		WebElement element = driver.findElement(headerPageTxt);
+		String pageText ="Create your Google Account";
+		return element.getText().contains(pageText);
+	}
+	
+	public void createAccount() {
+		//need to write steps for creating an account
+	}
+}

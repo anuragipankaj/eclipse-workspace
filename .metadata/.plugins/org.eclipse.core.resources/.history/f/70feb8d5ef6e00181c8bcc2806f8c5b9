@@ -1,0 +1,13 @@
+package facebookPages;
+
+public class mainPage
+{
+	WebDriver driver;
+	void mainPage(Driver d)
+	{
+		driver =d;
+	}
+	
+	
+
+}

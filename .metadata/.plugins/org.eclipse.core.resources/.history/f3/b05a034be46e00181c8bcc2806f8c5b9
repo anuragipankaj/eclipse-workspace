@@ -1,0 +1,43 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class signInPage 
+{
+	
+protected WebDriver driver;
+
+private By headerPageText = By.cssSelector(".hidden-small");
+private By createAccountLink = By.id("link-signup");
+private By emailTextBox = By.id("Email");
+private By passwordTextBox = By.id("Passwd");
+private By loginBtn = By.id("signIn");
+private By errorMsgTxt = By.id("errormsg_0_Passwd");
+
+
+
+signInPage(WebDriver d )
+{
+	driver =d;	
+}
+
+public String getTitle()
+{
+	return driver.getTitle();
+}
+
+public boolean verifyPage()
+	{
+	String expectedTitle = "Sign in - Google Accounts";
+	return getTitle().equals(expectedTitle);
+	}
+
+public createAccountPage createAccount()
+{
+	
+}
+
+
+
+}

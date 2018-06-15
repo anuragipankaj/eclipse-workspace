@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Page Object test example]">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="https://www.facebook.com/"/>
+  <test thread-count="5" name="sample test(failed)">
+    <classes>
+      <class name="tests.testFbMainPage">
+        <methods>
+          <include name="setup"/>
+          <include name="closeSetup"/>
+          <include name="verifyMainPage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.testFbMainPage -->
+    </classes>
+  </test> <!-- sample test(failed) -->
+</suite> <!-- Failed suite [Page Object test example] -->

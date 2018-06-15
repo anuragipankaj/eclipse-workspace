@@ -1,0 +1,15 @@
+Feature: annotation 
+
+#Scenario with AND 
+Scenario: 
+   Given Open the Firefox and launch the Facebook			
+   When I enter username as "TOM"
+   And I enter password as "JERRY" 
+   Then Login should fail 
+
+#Scenario with BUT 
+Scenario: 
+   When I enter username as "TOM" 
+   And I enter password as "JERRY" 
+   Then Login should fail 
+   But Relogin option should be available

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [multiBrowser]">
+  <test thread-count="5" name="chromeDemo(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="driverUrl" value="C:/Users/anuragi.pankaj/Downloads/installed softwares/selenium/chrome driver/chromedriver.exe"/>
+    <classes>
+      <class name="xmlDemo.multiBrowser">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="searchData"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- xmlDemo.multiBrowser -->
+    </classes>
+  </test> <!-- chromeDemo(failed) -->
+</suite> <!-- Failed suite [multiBrowser] -->

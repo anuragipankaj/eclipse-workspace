@@ -1,0 +1,23 @@
+<suite name="multiBrowser">
+<test name="firefoxDemo">
+<parameter name="browser" value="firefox"></parameter>
+<parameter name="driverUrl" value="C:/Users/anuragi.pankaj/Downloads/installed softwares/selenium/gecko/geckodriver.exe"></parameter>
+
+<classes>
+
+<class name="xmlDemo.multiBrowser" />
+
+</classes>
+</test>
+
+<test name="chromeDemo">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="driverUrl" value="C:/Users/anuragi.pankaj/Downloads/installed softwares/selenium/chrome driver/chromedriver.exe"></parameter>
+<classes>
+
+<class name="xmlDemo.multiBrowser" />
+
+</classes>
+</test>
+
+</suite>

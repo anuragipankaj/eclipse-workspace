@@ -1,0 +1,25 @@
+package facebookPages;
+
+import org.openqa.selenium.WebDriver;
+
+public class afterLogin 
+{
+	protected WebDriver driver;
+	
+	void afterLogin(WebDriver d)
+	{
+		driver =d;
+	}
+	
+	public String getTitle()
+	{
+		return driver.getTitle();
+	}
+
+	public void verifyTitle()
+	{
+	
+		
+	}
+	
+}

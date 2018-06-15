@@ -1,0 +1,22 @@
+package facebookPages;
+
+import org.openqa.selenium.WebDriver;
+
+public class mainPage
+{
+	WebDriver driver;
+	void mainPage(WebDriver d)
+	{
+		driver =d;
+	}
+public String getTitle()
+	{
+	return driver.getTitle();
+	}
+public boolean verifyTitle()
+	{
+		
+	}
+
+
+}

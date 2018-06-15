@@ -1,0 +1,13 @@
+package Annotation;
+
+import cucumber.api.CucumberOptions;
+
+@RunWith(Cucumber.class) 
+
+@CucumberOptions(features="Features",glue= {"Annotation"}) 
+
+public class runTest 
+{
+	
+	
+}

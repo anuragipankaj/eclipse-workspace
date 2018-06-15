@@ -1,0 +1,14 @@
+<suite name="Test-class Suite" parallel="tests" thread-count="2">
+    <test name="test 1">
+        <parameter name="test-name" value="test1" />
+        <classes>
+            <class name="parallel.multiTest" />
+        </classes>
+    </test>
+    <test name="test 2">
+        <parameter name="test-name" value="test2" />
+        <classes>
+            <class name="parallel.multiTest" />
+        </classes>
+    </test>
+</suite>

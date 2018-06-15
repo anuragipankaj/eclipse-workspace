@@ -1,0 +1,9 @@
+<suite name="Page Object test example">
+<parameter name="url" value="https://www.google.co.in/"/>
+<parameter name="browser" value="firefox"/>
+  <test name="sample test">
+    <classes>
+      <class name="testBasePage"/>
+    </classes>
+  </test>
+</suite>
