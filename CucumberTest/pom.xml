@@ -18,7 +18,7 @@
   <dependency> 
    <groupId>info.cukes</groupId> 
    <artifactId>cucumber-java</artifactId> 
-   <version>1.0.2</version> 
+   <version>1.2.5</version> 
    <scope>test</scope> 
 </dependency>
   <dependency> 
@@ -33,4 +33,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <dependency>
+   <groupId>org.apache.poi</groupId>
+   <artifactId>poi-ooxml</artifactId>
+   <version>3.9</version>
+</dependency>
+<dependency>
+   <groupId>org.apache.poi</groupId>
+   <artifactId>poi</artifactId>
+   <version>3.11-beta3</version>
+</dependency>
+
+
 </project>
