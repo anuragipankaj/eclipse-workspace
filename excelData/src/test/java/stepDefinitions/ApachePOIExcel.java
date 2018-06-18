@@ -11,8 +11,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import com.github.javafaker.Faker;
-
 import cucumber.api.java.en.*;
 
 public class ApachePOIExcel {
@@ -38,7 +36,8 @@ public class ApachePOIExcel {
     }
 
     @Then("^I access the rows and cells$")
-    public void i_access_the_rows_and_cells() throws Throwable {
+    public void i_access_the_rows_and_cells() throws Throwable 
+    {
         XSSFSheet sheet = workbook.getSheet("Sheet1");
         for(int i=0;i<sheet.getPhysicalNumberOfRows();i++)
         {
